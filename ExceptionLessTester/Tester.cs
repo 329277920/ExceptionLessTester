@@ -11,6 +11,8 @@ namespace ExceptionLessTester
         [TestMethod]
         public void TestMethod1()
         {
+            Console.WriteLine("OK");   
+             
             ExceptionlessClient.Default.Configuration.ServerUrl = "http://exceptionless.manjinba.cn";
             ExceptionlessClient.Default.Configuration.ApiKey = "gtoRHHuReUWfJDgfALpI4R6Zdy7pjtooIYv9IJfe";
 
@@ -25,7 +27,7 @@ namespace ExceptionLessTester
                     {
                         Name = "cnf", // 用户显示名称
                         Identity = "10101" // 用户标识，可用于搜索
-                    })
+                    })                 
                     .Submit(); // 提交
 
             ExceptionlessClient.Default

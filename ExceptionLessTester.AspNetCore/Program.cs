@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
+using Exceptionless;
+
 namespace ExceptionLessTester.AspNetCore
 {
     public class Program
@@ -15,6 +17,7 @@ namespace ExceptionLessTester.AspNetCore
         public static void Main(string[] args)
         {
             BuildWebHost(args).Run();
+            
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
